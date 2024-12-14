@@ -1,68 +1,87 @@
-<!-- # Project Management System
+# Python Task Management System
 
-A command-line task management system built with Python that demonstrates fundamental computer science concepts and software development principles.
+## Overview
+
+This is a command-line Task Management System built in Python that allows users to create, manage, and track tasks with various features like priority sorting, task completion tracking, and persistent storage.
 
 ## Features
 
-- Create and manage tasks with titles, descriptions, priorities, and due dates
-- Persistent storage using JSON
-- Sort tasks by priority or due date
-- Search functionality for tasks
-- Mark tasks as completed
-- Simple and intuitive command-line interface
+- **Add Tasks**: Create new tasks with title, description, priority, and due date
+- **View Tasks**: 
+  - List all tasks
+  - Sort tasks by priority or due date
+- **Task Tracking**:
+  - Mark tasks as completed
+  - Search tasks by keyword
+- **Persistent Storage**: 
+  - Tasks are automatically saved to and loaded from a JSON file
 
-## Technical Highlights
+## Prerequisites
 
-- Object-Oriented Programming principles
-- Data structure implementation
-- File I/O operations
-- JSON data handling
-- Search and sort algorithms
-- DateTime operations
-- Error handling
+- Python 3.7+
+- Standard Python libraries (json, datetime, os)
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository
+2. Ensure you have Python 3.7 or higher installed
+3. No additional dependencies required
+
+## Usage
+
+Run the script and choose from the following options:
+
+1. **Add Task**
+   - Enter task details including title, description, priority, and due date
+
+2. **View Tasks**
+   - Choose to sort tasks by priority or due date
+   - View task details including status
+
+3. **Mark Task as Completed**
+   - Mark a specific task as completed by its title
+
+4. **Search Tasks**
+   - Search for tasks using keywords (matches title or description)
+
+5. **Exit**
+   - Close the application
+
+## Example
+
 ```bash
-git clone https://github.com/HakubaCode/Project-Management-System-.git
+python task_management.py
 
-Navigate to the project directory:
+1. Add Task
+2. View Tasks
+3. Mark Task as Completed
+4. Search Tasks
+5. Exit
 
+Enter your choice (1-5): 
+```
 
+## Data Persistence
 
-cd Project-Management-System
-No additional dependencies required - runs with Python standard library.
-Usage
-Run the program:
+- Tasks are automatically saved to `tasks.json`
+- Tasks are loaded from `tasks.json` when the application starts
+- Allows for maintaining task list between application sessions
 
+## Project Structure
 
+- `Task` class: Represents individual tasks
+- `ProjectManagementSystem` class: Manages task operations
+- `main()` function: Provides command-line interface
 
+## Potential Improvements
 
-python project_management.py
-Available Commands:
-Add Task - Create a new task with:
-
-Title
-Description
-Priority (1-5)
-Due date (YYYY-MM-DD)
-View Tasks - Display all tasks with sorting options:
-
-Sort by priority
-Sort by due date
-Mark Task as Completed - Update task status
-
-Search Tasks - Find tasks by keyword
-
-Exit - Close the application
-
-Project Structure
+- Add task editing functionality
+- Implement task deletion
+- Create a graphical user interface (GUI)
+- Add more advanced filtering options
 
 
 
-project_management_system/
-│
-├── project_management.py    # Main application file
-├── tasks.json              # Data storage file
-└── README.md              # Documentation -->
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
